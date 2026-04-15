@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="btn();" class="bnt1">Turn on</button>
+    <p class="op">Light is off</p>
+</body>
+
+<script>
+    let bt=document.querySelector(".bnt1");
+    let sts=document.querySelector(".op");
+    
+    function btn(){
+        if (bt.innerHTML==="Turn on"){
+            sts.innerHTML="Light is on";
+            bt.innerHTML="Turn off";
+        }
+
+        else if (bt.innerHTML==="Turn off"){
+            sts.innerHTML="Light is off";
+            bt.innerHTML="Turn on";
+        }
+    }
+   
+    
+   
+</script>
+
+</script>
+</html>
