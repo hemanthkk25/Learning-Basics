@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="inp">
+    <button class="btn" onclick="display()" >Submit</button>
+    <p class="inpval"></p>
+
+</body>
+<script>
+    let element=document.querySelector(".inp");
+    let para=document.querySelector(".inpval");
+    function display(){
+        let val=element.value;
+        para.innerHTML=`${val}`;
+    }
+</script>
+</html>
